@@ -1,0 +1,11 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: node
+    parallelism: 2
+    steps:
+      - checkout
+      - run: node main.js
+      
